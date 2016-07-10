@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+sourceCompatibility = 1.8 
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'com.amazonaws:aws-java-sdk:' + awsVersion
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    testCompile 'junit:junit:4.12'
+}
